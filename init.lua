@@ -1,4 +1,4 @@
-sound_api = {}
+local sound_api = {}
 
 --convert some games for api usage
 
