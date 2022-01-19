@@ -90,6 +90,11 @@ function sound_api.node_sound_dirt_defaults(table)
     end
 end
 
+--return dirt as some games use dirt vs grass
+function sound_api.node_sound_grass_defaults(table)
+    return sound_api.node_sound_dirt_defaults(table)
+end
+
 function sound_api.node_sound_sand_defaults(table)
     if minetest.get_modpath("default") then
         return default.node_sound_sand_defaults(table)
