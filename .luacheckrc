@@ -1,7 +1,3 @@
 globals = {
-    "sound_api",
-}
-
-read_globals = {
-    "minetest",
+    "sound_api", "minetest",
 }
