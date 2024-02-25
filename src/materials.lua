@@ -6,6 +6,8 @@ local materials = {
     steel_ingot = "default:steel_ingot",
     gold_ingot = "default:gold_ingot",
     tin_ingot = "default:tin_ingot",
+    mese = "default:mese",
+    mese_crystal = "default:mese_crystal",
     mese_crystal_fragment = "default:mese_crystal_fragment",
     torch = "default:torch",
     diamond = "default:diamond",
@@ -38,10 +40,14 @@ local materials = {
     wool_white = "wool:white",
     slab_stone = "stairs:slab_stone",
     slab_wood = "stairs:slab_wood",
+    glass = "default:glass",
     glass_block = "default:glass",
     glass_bottle = "vessels:glass_bottle",
     coal_lump = "default:coal_lump",
     stone = "default:stone",
+    desert_stone = "default:desert_stone",
+    desert_sand = "default:desert_sand",
+    chest = "default:chest",
     cobble = "default:cobble",
     brick = "default:brick",
     obsidian_glass = "default:obsidian_glass",
@@ -60,6 +66,8 @@ if minetest.get_modpath("mcl_core") then
         steel_ingot = "mcl_core:iron_ingot",
         gold_ingot = "mcl_core:gold_ingot",
         tin_ingot = "mcl_core:iron_ingot",
+        mese = "mesecons_torch:redstoneblock",
+        mese_crystal = "mesecons:redstone",
         mese_crystal_fragment = "mcl_core:iron_ingot",
         torch = "mcl_torches:torch",
         diamond = "mcl_core:diamond",
@@ -92,10 +100,14 @@ if minetest.get_modpath("mcl_core") then
         wool_white = "mcl_wool:white",
         slab_stone = "mcl_stairs:slab_stone",
         slab_wood = "mcl_stairs:slab_wood",
+        glass = "mcl_core:glass",
         glass_block = "mcl_core:glass",
         glass_bottle = "mcl_core:glass_bottle",
         coal_lump = "mcl_core:coal",
         stone = "mcl_core:stone",
+        desert_stone = "mcl_core:redsandstone",
+        desert_sand = "mcl_core:sand",
+        chest = "mcl_chests:chest",
         cobble = "mcl_core:cobble",
         brick = "mcl_core:brick",
     }
@@ -106,6 +118,8 @@ elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
         gravel = "fl_topsoil:gravel",
         steel_ingot = "fl_ores:iron_ingot",
         gold_ingot = "fl_ores:gold_ingot",
+        mese = "fl_ores:iron_ingot",
+        mese_crystal = "fl_ores:iron_ingot",
         mese_crystal_fragment = "fl_ores:iron_ingot",
         torch = "fl_light_sources:torch",
         diamond = "fl_ores:diamond",
@@ -140,10 +154,14 @@ elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
         wool_white = "",
         slab_stone = "fl_stone:stone_slab",
         slab_wood = "fl_trees:apple_plank_slab",
+        glass = "fl_glass:framed_glass",
         glass_block = "fl_glass:framed_glass",
         glass_bottle = "fl_bottles:bottle",
         coal_lump = "fl_ores:coal_ore",
         stone = "fl_stone:stone",
+        desert_stone = "fl_stone:desert_stone",
+        desert_sand = "fl_stone:desert_sand",
+        chest = "fl_storage:wood_chest",
         cobble = "fl_stone:stone_rubble",
         brick = "",
     }
@@ -156,6 +174,8 @@ elseif minetest.get_modpath("hades_core") then
         gold_ingot = "hades_core:gold_ingot",
         tin_ingot = "hades_core:tin_ingot",
         silver_ingot = "--unknown--",
+        mese = "hades_core:mese",
+        mese_crystal = "hades_core:mese_crystal",
         mese_crystal_fragment = "hades_core:mese_crystal_fragment",
         torch = "hades_torches:torch",
         diamond = "hades_core:diamond",
@@ -194,11 +214,15 @@ elseif minetest.get_modpath("hades_core") then
         wool_white = "wool:white",
         slab_stone = "stairs:slab_stone",
         slab_wood = "stairs:slab_wood",
+        glass = "hades_core:glass",
         glass_block = "hades_core:glass",
         glass_bottle = "vessels:glass_bottle",
         obsidian_glass = "hades_core:obsidian_glass",
         coal_lump = "hades_core:coal_lump",
         stone = "hades_core:stone",
+        desert_stone = "hades_core:stone_baked",
+        desert_sand = "hades_core:volcanic_sand",
+        chest = "hades_chests:chest";
         cobble = "hades_core:cobble",
         brick = "hades_core:brick"
     }
@@ -209,6 +233,9 @@ elseif minetest.get_modpath("hades_core") then
     end
     if minetest.get_modpath("hades_extraores") then
         materials["silver_ingot"] = "hades_extraores:silver_ingot"
+    end
+    if minetest.get_modpath("hades_default") then
+        materials.desert_sand = "hades_default:desert_sand"
     end
 end
 
