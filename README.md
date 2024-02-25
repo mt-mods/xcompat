@@ -1,18 +1,14 @@
-# Sound API
+# xcompat
 
-mod that enables sound to be game agnostic
+a mod that aims to facilitate other mods to be game agnostic by handling sounds and crafting
+
+thanks to:
+* MisterE, OgelGames, and Blockhead for naming advice/suggestion
+* luk3yx, Blockhead, Buckaroo for bouncing ideas on the concept of this mod
+
 ## Installing
 
-* `git clone https://github.com/mt-mods/sound_api.git`
-* `cd sound_api`
-* `git submodule init`
-* `git submodule update`
-
-to update please use the following commands starting inside the mod directory
-
-* `git pull`
-* `git submodule sync`
-* `git submodule update`
+clone via git or install via contentdb (soon)
 
 ## Dev Docs
 
