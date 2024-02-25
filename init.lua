@@ -5,9 +5,6 @@ xcompat = {
     materials = dofile(modpath .. "/src/materials.lua"),
 }
 
---this exists for legacy compat reasons
-sound_api = xcompat.sounds -- luacheck: ignore
-
 local function validate_sound(key)
     if key and xcompat.sounds[key] then
         return true
