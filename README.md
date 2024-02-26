@@ -1,15 +1,30 @@
-# xcompat
+# XCompat [xcompat]
 
-a mod that aims to facilitate other mods to be game agnostic by handling sounds and crafting
+[![luacheck](https://github.com/mt-mods/xcompat/workflows/luacheck/badge.svg)](https://github.com/mt-mods/xcompat/actions)
+[![ContentDB](https://content.minetest.net/packages/mt-mods/xcompat/shields/downloads/)](https://content.minetest.net/packages/mt-mods/xcompat/)
 
-thanks to:
-* MisterE, OgelGames, and Blockhead for naming advice/suggestion
-* luk3yx, Blockhead, Buckaroo for bouncing ideas on the concept of this mod
+Provides cross compatibility between games and mods for sounds and crafting materials.
 
-## Installing
+Thanks to:
+* MisterE, OgelGames, and Blockhead for naming advice/suggestion.
+* luk3yx, Blockhead, BuckarooBanzai for bouncing ideas on the concept of this mod.
 
-clone via git or install via contentdb (soon)
+## Usage
 
-## Dev Docs
+See [DEV.md](DEV.md) for detailed documentation.
 
-Can be found at /DEV.md
+## Supported games and mods
+
+**Games**
+* Minetest Game
+* MineClone2
+* Mineclonia
+* Hades Revisited
+* Farlands Reloaded
+* Exile
+* KSurvive 2
+
+**Mods**
+* `basic_materials`
+* `mesecons_materials`
+* `moreores`
