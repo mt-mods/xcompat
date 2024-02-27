@@ -1,4 +1,4 @@
-# XCompat [xcompat]
+# XCompat
 
 [![luacheck](https://github.com/mt-mods/xcompat/workflows/luacheck/badge.svg)](https://github.com/mt-mods/xcompat/actions)
 [![ContentDB](https://content.minetest.net/packages/mt-mods/xcompat/shields/downloads/)](https://content.minetest.net/packages/mt-mods/xcompat/)

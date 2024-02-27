@@ -1,11 +1,11 @@
 
 globals = {
-     "minetest",
-	 "xcompat",
+	"minetest",
+	"xcompat",
 }
 
 read_globals = {
-    "default",
+	"default",
 	"mcl_sounds",
 	"ks_sounds",
 	"nodes_nature",
