@@ -3,6 +3,7 @@ local modpath = minetest.get_modpath("xcompat")
 xcompat = {
     sounds = dofile(modpath .. "/src/sounds.lua"),
     materials = dofile(modpath .. "/src/materials.lua"),
+    textures = dofile(modpath .. "/src/textures.lua"),
 }
 
 local function validate_sound(key)
