@@ -20,7 +20,7 @@ local textures = {
             "0,0=\\[combine\\:16x1\\^[noalpha\\^[colorize\\:#ffffff:" ..
             "0,15=\\[combine\\:16x1\\^[noalpha\\^[colorize\\:#ffffff:" ..
             "15,0=\\[combine\\:1x16\\^[noalpha\\^[colorize\\:#ffffff",
-        block = "",
+        detail = "",
     },
     wood = {
         apple = {
@@ -40,7 +40,10 @@ local textures = {
     },
     water = {
         tile = "[combine:16x16^[noalpha^[colorize:#00008b",
-        animated = "",
+        animated = {
+            source = "",
+            flowing = "",
+        },
     },
     wool = {
         white = "[combine:16x16^[noalpha^[colorize:#ffffff",
@@ -62,39 +65,42 @@ if minetest.get_modpath("default") then
 
         metal = {
             steel = {
-                ore = "",
-                ingot = "",
+                ore = "default_iron_lump.png",
+                ingot = "default_steel_ingot.png",
                 block = "default_steel_block.png",
             },
             gold = {
-                ore = "",
-                ingot = "",
+                ore = "default_gold_lump.png",
+                ingot = "default_gold_ingot.png",
                 block = "default_gold_block.png",
             },
         },
         glass = {
             pane = "default_glass.png",
-            block = "",
+            detail = "default_glass_detail.png",
         },
         wood = {
             apple = {
-                sapling = "",
+                sapling = "default_sapling.png",
                 planks = "default_wood.png",
-                trunk_side = "",
-                trunk_top = "",
-                leaves = "",
+                trunk_side = "default_tree.png",
+                trunk_top = "default_tree_top.png",
+                leaves = "default_leaves.png",
             },
             jungle = {
-                sapling = "",
+                sapling = "default_junglesapling.png",
                 planks = "default_junglewood.png",
-                trunk_side = "",
-                trunk_top = "",
-                leaves = "",
+                trunk_side = "default_jungletree.png",
+                trunk_top = "default_jungletree_top.png",
+                leaves = "default_jungleleaves.png",
             },
         },
         water = {
             tile = "default_water.png",
-            animated = "",
+            animated = {
+                source = "default_water_source_animated.png",
+                flowing = "default_water_flowing_animated.png",
+            },
         },
         wool = {
             white = "wool_white.png",
