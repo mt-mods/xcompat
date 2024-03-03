@@ -163,10 +163,10 @@ elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
             },
         },
         wool = {
-            white = "",
-            black = "",
-            grey = "",
-            dark_grey = "",
+            white = "farlands_wool.png",
+            black = "farlands_wool.png",
+            grey = "farlands_wool.png",
+            dark_grey = "farlands_wool.png",
         },
         grass = {
             top = "farlands_grass.png",
