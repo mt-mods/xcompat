@@ -4,13 +4,13 @@ local textures = {
 
     metal = {
         steel = {
-            ore = "",
-            ingot = "",
+            ore = "[combine:16x16^[noalpha^[colorize:#D3D3D3",
+            ingot = "[combine:16x16^[noalpha^[colorize:#D3D3D3",
             block = "[combine:16x16^[noalpha^[colorize:#D3D3D3",
         },
         gold = {
-            ore = "",
-            ingot = "",
+            ore = "[combine:16x16^[noalpha^[colorize:#FFD700",
+            ingot = "[combine:16x16^[noalpha^[colorize:#FFD700",
             block = "[combine:16x16^[noalpha^[colorize:#FFD700",
         },
     },
@@ -20,29 +20,33 @@ local textures = {
             "0,0=\\[combine\\:16x1\\^[noalpha\\^[colorize\\:#ffffff:" ..
             "0,15=\\[combine\\:16x1\\^[noalpha\\^[colorize\\:#ffffff:" ..
             "15,0=\\[combine\\:1x16\\^[noalpha\\^[colorize\\:#ffffff",
-        detail = "",
+        detail = "[combine:16x16:" ..
+            "0,0=\\[combine\\:1x16\\^[noalpha\\^[colorize\\:#ffffff:" ..
+            "0,0=\\[combine\\:16x1\\^[noalpha\\^[colorize\\:#ffffff:" ..
+            "0,15=\\[combine\\:16x1\\^[noalpha\\^[colorize\\:#ffffff:" ..
+            "15,0=\\[combine\\:1x16\\^[noalpha\\^[colorize\\:#ffffff",
     },
     wood = {
         apple = {
-            sapling = "",
+            sapling = "[combine:16x16^[noalpha^[colorize:#654321",
             planks = "[combine:16x16^[noalpha^[colorize:#654321",
-            trunk_side = "",
-            trunk_top = "",
-            leaves = "",
+            trunk_side = "[combine:16x16^[noalpha^[colorize:#654321",
+            trunk_top = "[combine:16x16^[noalpha^[colorize:#654321",
+            leaves = "[combine:16x16^[noalpha^[colorize:#654321",
         },
         jungle = {
-            sapling = "",
+            sapling = "[combine:16x16^[noalpha^[colorize:#563d2d",
             planks = "[combine:16x16^[noalpha^[colorize:#563d2d",
-            trunk_side = "",
-            trunk_top = "",
-            leaves = "",
+            trunk_side = "[combine:16x16^[noalpha^[colorize:#563d2d",
+            trunk_top = "[combine:16x16^[noalpha^[colorize:#563d2d",
+            leaves = "[combine:16x16^[noalpha^[colorize:#563d2d",
         },
     },
     water = {
         tile = "[combine:16x16^[noalpha^[colorize:#00008b",
         animated = {
-            source = "",
-            flowing = "",
+            source = "[combine:16x16^[noalpha^[colorize:#00008b",
+            flowing = "[combine:16x16^[noalpha^[colorize:#00008b",
         },
     },
     wool = {
@@ -53,8 +57,8 @@ local textures = {
     },
     grass = {
         top = "[combine:16x16^[noalpha^[colorize:#006400",
-        side = "",
-        dirt = "",
+        side = "[combine:16x16^[noalpha^[colorize:#006400",
+        dirt = "[combine:16x16^[noalpha^[colorize:#563d2d",
     },
 }
 
