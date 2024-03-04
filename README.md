@@ -13,16 +13,17 @@ Thanks to:
 
 See [DEV.md](DEV.md) for detailed documentation.
 
-## Supported games and mods
+## Directly supported games and mods
 
-**Games**
-* Minetest Game
-* MineClone2
-* Mineclonia
-* Hades Revisited
-* Farlands Reloaded
-* Exile
-* KSurvive 2
+| Games             | Sounds    | Materials | Textures  |
+| ----------------- | --------- | --------- | --------- |
+| Minetest Game     | x         | x         | x         |
+| MineClone2        | x         | x         |           |
+| Mineclonia        | x         | x         |           |
+| Hades Revisited   | x         | x         |           |
+| Farlands Reloaded | x         | x         | x         |
+| Exile             | x         |           |           |
+| KSurvive 2        | x         |           |           |
 
 **Mods**
 * `basic_materials`
