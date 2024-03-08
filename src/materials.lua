@@ -57,6 +57,20 @@ if minetest.get_modpath("moreores") then
     materials.silver_ingot = "moreores:silver_ingot"
 end
 
+if minetest.get_modpath("technic") then
+	materials.lead_ingot = "technic:lead_ingot"
+	materials.carbon_steel_ingot = "technic:carbon_steel_ingot"
+	materials.stainless_steel_ingot = "technic:stainless_steel_ingot"
+end
+
+if minetest.get_modpath("aloz") then
+	materials.aluminum_ingot = "aloz:aluminum_ingot"
+end
+
+if minetest.get_modpath("techage") then
+	materials.aluminum_ingot = "techage:aluminum"
+end
+
 if minetest.get_modpath("mcl_core") then
     materials = {
         dirt = "mcl_core:dirt",
@@ -233,10 +247,16 @@ elseif minetest.get_modpath("hades_core") then
     end
     if minetest.get_modpath("hades_extraores") then
         materials["silver_ingot"] = "hades_extraores:silver_ingot"
+        materials["aluminum_ingot"] = "hades_extraores:aluminum_ingot"
     end
     if minetest.get_modpath("hades_default") then
         materials.desert_sand = "hades_default:desert_sand"
     end
+    if minetest.get_modpath("hades_technic") then
+		materials.lead_ingot = "hades_technic:lead_ingot"
+		materials.carbon_steel_ingot = "hades_technic:carbon_steel_ingot"
+		materials.stainless_steel_ingot = "hades_technic:stainless_steel_ingot"
+	end
 end
 
 return materials
