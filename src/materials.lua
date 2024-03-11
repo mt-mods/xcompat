@@ -1,6 +1,7 @@
 local materials = {
     dirt = "default:dirt",
     sand = "default:sand",
+    sandstone = "default:sandstone",
     gravel = "default:gravel",
     copper_ingot = "default:copper_ingot",
     steel_ingot = "default:steel_ingot",
@@ -75,6 +76,7 @@ if minetest.get_modpath("mcl_core") then
     materials = {
         dirt = "mcl_core:dirt",
         sand = "mcl_core:sand",
+        sandstone = "mcl_core:sandstone",
         gravel = "mcl_core:gravel",
         copper_ingot = "mcl_copper:copper_ingot",
         steel_ingot = "mcl_core:iron_ingot",
@@ -129,6 +131,7 @@ elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
     materials = {
         dirt = "fl_topsoil:dirt",
         sand = "fl_stone:sand",
+        sandstone = "fl_stone:sandstone",
         gravel = "fl_topsoil:gravel",
         steel_ingot = "fl_ores:iron_ingot",
         gold_ingot = "fl_ores:gold_ingot",
@@ -182,6 +185,7 @@ elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
 elseif minetest.get_modpath("hades_core") then
     materials = {
         sand = "hades_core:fertile_sand",
+        sandstone = "hades_core:sandstone",
         gravel = "hades_core:gravel",
         copper_ingot = "hades_core:copper_ingot",
         steel_ingot = "hades_core:steel_ingot",
