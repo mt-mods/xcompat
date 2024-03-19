@@ -20,4 +20,7 @@ RUN mkdir -p /root/.minetest/worlds/world/worldmods/ &&\
 RUN mkdir -p /root/.minetest/games &&\
     cd /root/.minetest/games &&\
     git clone https://github.com/minetest/minetest_game &&\
-    git clone --recurse-submodules https://github.com/TerraQuest-Studios/farlands_reloaded
+    git clone --recurse-submodules https://github.com/TerraQuest-Studios/farlands_reloaded &&\
+    git clone https://codeberg.org/mineclonia/mineclonia &&\
+    git clone https://git.minetest.land/MineClone2/MineClone2 &&\
+    git clone https://codeberg.org/Wuzzy/Hades_Revisited

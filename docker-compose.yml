@@ -15,3 +15,7 @@ services:
  farlands_reloaded:
   <<: *servicetemplate
   entrypoint: "minetestserver --config /minetest.conf --world /root/.minetest/worlds/world/ --gameid farlands_reloaded"
+
+ mineclonia:
+  <<: *servicetemplate
+  entrypoint: "minetestserver --config /minetest.conf --world /root/.minetest/worlds/world/ --gameid mineclonia"
