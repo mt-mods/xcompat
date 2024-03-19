@@ -1,7 +1,7 @@
 version: "3.6"
 
 services:
- default:
+ minetest_game:
   build: test
   entrypoint: "minetestserver --config /minetest.conf --world /root/.minetest/worlds/world/ --gameid minetest"
   volumes:

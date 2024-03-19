@@ -1,4 +1,4 @@
-name: test
+name: minetest_game
 on: [push, pull_request]
 jobs:
   test:
@@ -7,4 +7,4 @@ jobs:
     steps:
         uses: actions/checkout@main
       - name: test
-        run: docker-compose up --exit-code-from default
+        run: docker-compose up --exit-code-from minetest_game
