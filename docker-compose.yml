@@ -19,3 +19,11 @@ services:
  mineclonia:
   <<: *servicetemplate
   entrypoint: "minetestserver --config /minetest.conf --world /root/.minetest/worlds/world/ --gameid mineclonia"
+
+ mineclone2:
+  <<: *servicetemplate
+  entrypoint: "minetestserver --config /minetest.conf --world /root/.minetest/worlds/world/ --gameid mineclone2"
+
+ hades_revisited:
+  <<: *servicetemplate
+  entrypoint: "minetestserver --config /minetest.conf --world /root/.minetest/worlds/world/ --gameid hades_revisited"
