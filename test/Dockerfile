@@ -19,4 +19,5 @@ RUN mkdir -p /root/.minetest/worlds/world/worldmods/ &&\
 # available games
 RUN mkdir -p /root/.minetest/games &&\
     cd /root/.minetest/games &&\
-    git clone https://github.com/minetest/minetest_game
+    git clone https://github.com/minetest/minetest_game &&\
+    git clone --recurse-submodules https://github.com/TerraQuest-Studios/farlands_reloaded
