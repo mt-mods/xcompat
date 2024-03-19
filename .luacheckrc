@@ -14,4 +14,5 @@ read_globals = {
 	"fl_trees",
 	"hades_sounds",
 	"rp_sounds",
+	"mtt",
 }

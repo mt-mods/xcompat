@@ -1,0 +1,10 @@
+version: "3.6"
+
+services:
+ default:
+  build: test
+  entrypoint: "minetestserver --config /minetest.conf --world /root/.minetest/worlds/world/ --gameid minetest"
+  volumes:
+    - "./:/root/.minetest/worlds/world/worldmods/xcompat/"
+    - "./test/nodelist:/root/.minetest/worlds/world/nodelist/"
+    - "./test/minetest.conf:/minetest.conf"
