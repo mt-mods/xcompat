@@ -35,3 +35,8 @@ minetest.register_on_mods_loaded(function()
         old_reg_node(name, def)
     end
 end)
+
+if minetest.get_modpath("mtt") then
+    -- register tests
+    dofile(modpath .. "/mtt.lua")
+end
