@@ -65,6 +65,8 @@ local materials = {
     water_flowing = "default:water_flowing",
     dirt = "default:dirt",
     dirt_with_grass = "default:dirt_with_grass",
+    apple_leaves = "default:leaves",
+    jungle_leaves = "default:jungleleaves",
 }
 
 if minetest.get_modpath("moreores") then
@@ -152,6 +154,8 @@ if minetest.get_modpath("mcl_core") then
         water_flowing = "mcl_core:water_flowing",
         dirt = "mcl_core:dirt",
         dirt_with_grass = "mcl_core:dirt_with_grass",
+        apple_leaves = "mcl_trees:apple_leaves",
+        jungle_leaves = "mcl_trees:jungle_leaves",
     }
 elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
     materials = {
@@ -220,6 +224,8 @@ elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
         water_flowing = "fl_liquids:water_flowing",
         dirt = "fl_stone:dirt",
         dirt_with_grass = "fl_topsoil:dirt_with_grass",
+        apple_leaves = "fl_trees:apple_leaves",
+        jungle_leaves = "fl_trees:jungletree_leaves",
     }
 elseif minetest.get_modpath("hades_core") then
     materials = {
@@ -296,6 +302,8 @@ elseif minetest.get_modpath("hades_core") then
         water_flowing = "hades_core:water_flowing",
         dirt = "hades_core:dirt",
         dirt_with_grass = "hades_core:dirt_with_grass",
+        apple_leaves = "hades_core:leaves",
+        jungle_leaves = "hades_core:jungleleaves",
     }
 
     if minetest.get_modpath("hades_bucket") then
