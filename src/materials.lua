@@ -1,5 +1,4 @@
 local materials = {
-    dirt = "default:dirt",
     sand = "default:sand",
     sandstone = "default:sandstone",
     gravel = "default:gravel",
@@ -58,6 +57,10 @@ local materials = {
     cobble = "default:cobble",
     brick = "default:brick",
     obsidian_glass = "default:obsidian_glass",
+    water_source = "default:water_source",
+    water_flowing = "default:water_flowing",
+    dirt = "default:dirt",
+    dirt_with_grass = "default:dirt_with_grass",
 }
 
 if minetest.get_modpath("moreores") then
@@ -80,7 +83,6 @@ end
 
 if minetest.get_modpath("mcl_core") then
     materials = {
-        dirt = "mcl_core:dirt",
         sand = "mcl_core:sand",
         sandstone = "mcl_core:sandstone",
         gravel = "mcl_core:gravel",
@@ -138,10 +140,13 @@ if minetest.get_modpath("mcl_core") then
         chest = "mcl_chests:chest",
         cobble = "mcl_core:cobble",
         brick = "mcl_core:brick",
+        water_source = "mcl_core:water_source",
+        water_flowing = "mcl_core:water_flowing",
+        dirt = "mcl_core:dirt",
+        dirt_with_grass = "mcl_core:dirt_with_grass",
     }
 elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
     materials = {
-        dirt = "fl_topsoil:dirt",
         sand = "fl_stone:sand",
         sandstone = "fl_stone:sandstone",
         gravel = "fl_topsoil:gravel",
@@ -199,6 +204,10 @@ elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
         chest = "fl_storage:wood_chest",
         cobble = "fl_stone:stone_rubble",
         brick = "",
+        water_source = "fl_liquids:water_source",
+        water_flowing = "fl_liquids:water_flowing",
+        dirt = "fl_stone:dirt",
+        dirt_with_grass = "fl_topsoil:dirt_with_grass",
     }
 elseif minetest.get_modpath("hades_core") then
     materials = {
@@ -266,7 +275,11 @@ elseif minetest.get_modpath("hades_core") then
         desert_sand = "hades_core:volcanic_sand",
         chest = "hades_chests:chest";
         cobble = "hades_core:cobble",
-        brick = "hades_core:brick"
+        brick = "hades_core:brick",
+        water_source = "hades_core:water_source",
+        water_flowing = "hades_core:water_flowing",
+        dirt = "hades_core:dirt",
+        dirt_with_grass = "hades_core:dirt_with_grass",
     }
 
     if minetest.get_modpath("hades_bucket") then
