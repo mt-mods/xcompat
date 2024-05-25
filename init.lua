@@ -40,3 +40,5 @@ minetest.register_on_mods_loaded(function()
         old_reg_node(name, def)
     end
 end)
+
+dofile(modpath .. "/src/commands.lua")
