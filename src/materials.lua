@@ -79,7 +79,7 @@ local materials = {
 if minetest.registered_items["farming:bowl"] then
     materials.bowl = "farming:bowl"
 elseif minetest.get_modpath("x_farming") then
-	materials.bowl = "x_farming:bowl"
+    materials.bowl = "x_farming:bowl"
 end
 
 if minetest.get_modpath("moreores") then
@@ -105,7 +105,7 @@ if minetest.get_modpath("mcl_core") then
         sand = "mcl_core:sand",
         sandstone = "mcl_core:sandstone",
         gravel = "mcl_core:gravel",
-	    flint = "mcl_core:flint",
+        flint = "mcl_core:flint",
         copper_ingot = "mcl_copper:copper_ingot",
         steel_ingot = "mcl_core:iron_ingot",
         gold_ingot = "mcl_core:gold_ingot",
@@ -169,20 +169,20 @@ if minetest.get_modpath("mcl_core") then
         dirt = "mcl_core:dirt",
         dirt_with_grass = "mcl_core:dirt_with_grass",
         apple_leaves = "mcl_trees:leaves_oak",
-	    apple_log = "mcl_trees:tree_oak",
-	    apple_planks = "mcl_trees:wood_oak",
-	    birch_leaves = "mcl_trees:leaves_birch",
-	    birch_log = "mcl_trees:tree_birch",
-	    birch_planks = "mcl_trees:wood_birch",
+        apple_log = "mcl_trees:tree_oak",
+        apple_planks = "mcl_trees:wood_oak",
+        birch_leaves = "mcl_trees:leaves_birch",
+        birch_log = "mcl_trees:tree_birch",
+        birch_planks = "mcl_trees:wood_birch",
         jungle_leaves = "mcl_trees:jungle_leaves",
-	    bowl = "mcl_core:bowl",
+        bowl = "mcl_core:bowl",
     }
 elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
     materials = {
         sand = "fl_stone:sand",
         sandstone = "fl_stone:sandstone",
         gravel = "fl_topsoil:gravel",
-	    flint = "fl_topsoil:flint",
+        flint = "fl_topsoil:flint",
         copper_ingot = "fl_ores:copper_ingot",
         steel_ingot = "fl_ores:iron_ingot",
         gold_ingot = "fl_ores:gold_ingot",
@@ -246,20 +246,20 @@ elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
         dirt = "fl_stone:dirt",
         dirt_with_grass = "fl_topsoil:dirt_with_grass",
         apple_leaves = "fl_trees:apple_leaves",
-	    apple_log = "fl_trees:apple_trunk",
-	    apple_planks = "fl_trees:apple_plank",
+        apple_log = "fl_trees:apple_trunk",
+        apple_planks = "fl_trees:apple_plank",
         birch_leaves = "fl_trees:aspen_leaves",
-	    birch_log = "fl_trees:aspen_trunk",
-	    birch_planks = "fl_trees:aspen_plank",
+        birch_log = "fl_trees:aspen_trunk",
+        birch_planks = "fl_trees:aspen_plank",
         jungle_leaves = "fl_trees:jungletree_leaves",
-	    bowl = "",
+        bowl = "",
     }
 elseif minetest.get_modpath("hades_core") then
     materials = {
         sand = "hades_core:fertile_sand",
         sandstone = "hades_core:sandstone",
         gravel = "hades_core:gravel",
-	    flint = "",
+        flint = "",
         copper_ingot = "hades_core:copper_ingot",
         steel_ingot = "hades_core:steel_ingot",
         gold_ingot = "hades_core:gold_ingot",
@@ -330,15 +330,15 @@ elseif minetest.get_modpath("hades_core") then
         water_flowing = "hades_core:water_flowing",
         dirt = "hades_core:dirt",
         dirt_with_grass = "hades_core:dirt_with_grass",
-	    apple_leaves = "hades_trees:leaves",
-	    apple_log = "hades_trees:tree",
-	    apple_planks = "hades_trees:wood",
-	    birch_leaves = "hades_core:birch_leaves",
-	    birch_log = "hades_trees:birch_tree",
-	    birch_planks = "hades_trees:cream_wood",
+        apple_leaves = "hades_trees:leaves",
+        apple_log = "hades_trees:tree",
+        apple_planks = "hades_trees:wood",
+        birch_leaves = "hades_core:birch_leaves",
+        birch_log = "hades_trees:birch_tree",
+        birch_planks = "hades_trees:cream_wood",
         jungle_leaves = "hades_trees:jungle_leaves",
 --hades has no bowl but you get plate on eat so makes most sense?
-	bowl = "hades_food:plate",
+        bowl = "hades_food:plate",
     }
 
     if minetest.get_modpath("hades_bucket") then
