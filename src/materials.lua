@@ -73,7 +73,6 @@ local materials = {
     birch_log = "default:aspen_tree",
     birch_planks = "default:aspen_wood",
     jungle_leaves = "default:jungleleaves",
-    glass_bottle =  "vessels:glass_bottle",
     bowl = "",
 }
 
@@ -171,12 +170,11 @@ if minetest.get_modpath("mcl_core") then
         dirt_with_grass = "mcl_core:dirt_with_grass",
         apple_leaves = "mcl_trees:leaves_oak",
 	apple_log = "mcl_trees:tree_oak",
-    	apple_planks = "mcl_trees:wood_oak",
+	apple_planks = "mcl_trees:wood_oak",
 	birch_leaves = "mcl_trees:leaves_birch",
 	birch_log = "mcl_trees:tree_birch",
-    	birch_planks = "mcl_trees:wood_birch",
+	birch_planks = "mcl_trees:wood_birch",
         jungle_leaves = "mcl_trees:jungle_leaves",
-	glass_bottle = "mcl_potions:glass_bottle",
 	bowl = "mcl_core:bowl",
     }
 elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
@@ -249,12 +247,11 @@ elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
         dirt_with_grass = "fl_topsoil:dirt_with_grass",
         apple_leaves = "fl_trees:apple_leaves",
 	apple_log = "fl_trees:apple_trunk",
-    	apple_planks = "fl_trees:apple_plank",
+	apple_planks = "fl_trees:apple_plank",
         birch_leaves = "fl_trees:aspen_leaves",
 	birch_log = "fl_trees:aspen_trunk",
-    	birch_planks = "fl_trees:aspen_plank",
+	birch_planks = "fl_trees:aspen_plank",
         jungle_leaves = "fl_trees:jungletree_leaves",
-	glass_bottle = "fl_bottles:bottle",
 	bowl = "",
     }
 elseif minetest.get_modpath("hades_core") then
@@ -335,12 +332,11 @@ elseif minetest.get_modpath("hades_core") then
         dirt_with_grass = "hades_core:dirt_with_grass",
 	apple_leaves = "hades_trees:leaves",
 	apple_log = "hades_trees:tree",
-   	apple_planks = "hades_trees:wood",
+	apple_planks = "hades_trees:wood",
 	birch_leaves = "hades_core:birch_leaves",
 	birch_log = "hades_trees:birch_tree",
 	birch_planks = "hades_trees:cream_wood",
         jungle_leaves = "hades_trees:jungle_leaves",
-	glass_bottle = "hades_vessels:glass_bottle",
 --hades has no bowl but you get plate on eat so makes most sense?
 	bowl = "hades_food:plate",
     }
