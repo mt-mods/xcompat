@@ -18,5 +18,7 @@ minetest.register_chatcommand("xcompat_test_materials", {
                 end
             end
         end
+
+        minetest.chat_send_player(name, "Materials test complete")
     end
 })

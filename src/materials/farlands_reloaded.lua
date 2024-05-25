@@ -41,7 +41,8 @@ local materials = {
     silver_ingot = "fl_ores:iron_ingot",
     silicon = "mesecons_materials:silicon",
     string = "fl_plantlife:oxeye_daisy",
-    paper = "basic_materials:plastic_sheet",
+    paper = "",
+    book = "",
     iron_lump = "fl_ores:iron_ore",
     wool_grey = "",
     wool_green = "",
@@ -61,6 +62,7 @@ local materials = {
     chest = "fl_storage:wood_chest",
     cobble = "fl_stone:stone_rubble",
     brick = "",
+    obsidian_glass = "",
     water_source = "fl_liquids:water_source",
     water_flowing = "fl_liquids:water_flowing",
     dirt = "fl_stone:dirt",
@@ -74,5 +76,9 @@ local materials = {
     jungle_leaves = "fl_trees:jungletree_leaves",
     bowl = "",
 }
+
+if minetest.get_modpath("basic_materials") then
+    materials.paper = "basic_materials:plastic_sheet"
+end
 
 return materials

@@ -63,6 +63,7 @@ local materials = {
     chest = "mcl_chests:chest",
     cobble = "mcl_core:cobble",
     brick = "mcl_core:brick",
+    obsidian_glass = "",
     water_source = "mcl_core:water_source",
     water_flowing = "mcl_core:water_flowing",
     dirt = "mcl_core:dirt",
