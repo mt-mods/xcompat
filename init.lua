@@ -1,10 +1,15 @@
 local modpath = minetest.get_modpath("xcompat")
 
 xcompat = {
-    sounds = dofile(modpath .. "/src/sounds.lua"),
-    materials = dofile(modpath .. "/src/materials.lua"),
-    textures = dofile(modpath .. "/src/textures.lua"),
+    modpath = modpath,
 }
+
+xcompat.gameid = dofile(modpath .. "/src/gameid.lua")
+xcompat.utilities = dofile(modpath .. "/src/utilities.lua")
+
+xcompat.sounds = dofile(modpath .. "/src/sounds.lua")
+xcompat.materials = dofile(modpath .. "/src/materials.lua")
+xcompat.textures = dofile(modpath .. "/src/textures.lua")
 
 local function validate_sound(key)
     if key and xcompat.sounds[key] then
@@ -35,3 +40,5 @@ minetest.register_on_mods_loaded(function()
         old_reg_node(name, def)
     end
 end)
+
+dofile(modpath .. "/src/commands.lua")

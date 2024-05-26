@@ -11,7 +11,7 @@ Thanks to:
 
 ## Usage
 
-See [DEV.md](DEV.md) for detailed documentation.
+See the respective sub apis doc file in /doc for detailed documentation.
 
 ## Directly supported games and mods
 
