@@ -36,7 +36,7 @@ minetest.register_chatcommand("xcompat_test_textures", {
     description = "Test textures",
     privs = {server=true},
     func = function(name, _)
-        local reference_textures = textures["minetest"]
+        local reference_textures = textures["xcompat_agnostic"]
 
         for gameid, game_textures in pairs(textures) do
             for texture, _ in pairs(reference_textures) do
