@@ -1,4 +1,4 @@
---note this file handles mineclonia, mineclone2, and its rename voxellibre
+--note this file handles mineclonia, mineclone2, and its rename voxelibre
 
 local materials = {
     sand = "mcl_core:sand",
