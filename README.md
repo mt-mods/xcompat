@@ -25,6 +25,8 @@ See the respective sub apis doc file in /doc for detailed documentation.
 | Exile             | x         |           |           |
 | KSurvive 2        | x         |           |           |
 
+For functions see /doc/functions.md for the specifics relating to the function
+
 **Mods**
 * `basic_materials`
 * `mesecons_materials`

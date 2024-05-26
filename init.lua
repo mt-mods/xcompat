@@ -10,6 +10,7 @@ xcompat.utilities = dofile(modpath .. "/src/utilities.lua")
 xcompat.sounds = dofile(modpath .. "/src/sounds.lua")
 xcompat.materials = dofile(modpath .. "/src/materials.lua")
 xcompat.textures = dofile(modpath .. "/src/textures.lua")
+xcompat.functions = dofile(modpath .. "/src/functions.lua")
 
 local function validate_sound(key)
     if key and xcompat.sounds[key] then
