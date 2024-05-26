@@ -24,6 +24,7 @@ See the respective sub apis doc file in /doc for detailed documentation.
 | Farlands Reloaded | x         | x         | x         |
 | Exile             | x         |           |           |
 | KSurvive 2        | x         |           |           |
+| Forgotten Lands   | x         |           |           |
 
 For functions see /doc/functions.md for the specifics relating to the function
 
