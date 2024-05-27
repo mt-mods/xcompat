@@ -81,4 +81,10 @@ if minetest.get_modpath("basic_materials") then
     materials.paper = "basic_materials:plastic_sheet"
 end
 
+if minetest.registered_items["farming:bowl"] then
+    materials.bowl = "farming:bowl"
+elseif minetest.get_modpath("x_farming") then
+    materials.bowl = "x_farming:bowl"
+end
+
 return materials
