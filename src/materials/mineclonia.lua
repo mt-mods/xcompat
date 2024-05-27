@@ -74,7 +74,7 @@ local materials = {
     birch_leaves = "mcl_trees:leaves_birch",
     birch_log = "mcl_trees:tree_birch",
     birch_planks = "mcl_trees:wood_birch",
-    jungle_leaves = "mcl_trees:jungle_leaves",
+    jungle_leaves = "mcl_trees:leaves_jungle",
     bowl = "mcl_core:bowl",
 }
 
