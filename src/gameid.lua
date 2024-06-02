@@ -27,4 +27,7 @@ end
 --for games that are similar/derviatives of other games
 if game_alias[gameid] then gameid = game_alias[gameid] end
 
+--while minetest game derviates are not supported, we can still try to detect them
+if minetest.get_modpath("default") then gameid = "minetest" end
+
 return gameid
