@@ -19,3 +19,5 @@ jobs:
             https://github.com/mt-mods/steel
             https://github.com/mt-mods/display_modpack
             https://github.com/mt-mods/homedecor_modpack
+          additional_config: |
+            mtt_nodelist = minetest.txt
