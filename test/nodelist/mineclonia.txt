@@ -1724,11 +1724,8 @@ homedecor:kitchen_cabinet_colored
 mesecons:wire_01110010_on
 mesecons:wire_01110010_off
 mesecons_pressureplates:pressure_plate_spruce_on
-steles:stone_stele
 pipeworks:lua_tube111000
-steles:sandstone_stele
 mesecons_button:button_spruce_off
-steles:redsandstone_stele
 mcl_fences:oak_fence
 homedecor:dishwasher_wood
 mesecons_button:button_spruce_on

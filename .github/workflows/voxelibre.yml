@@ -1,4 +1,4 @@
-name: mineclone2
+name: voxelibre
 on: [push, pull_request]
 jobs:
   test:
@@ -10,7 +10,7 @@ jobs:
       - uses: buckaroobanzay/mtt@main
         with:
           modname: xcompat
-          git_game_repo: https://git.minetest.land/MineClone2/MineClone2
+          git_game_repo: https://git.minetest.land/VoxeLibre/VoxeLibre/
           git_dependencies: |
             https://github.com/mt-mods/unifieddyes
             https://github.com/mt-mods/basic_materials
@@ -20,4 +20,4 @@ jobs:
             https://github.com/mt-mods/display_modpack
             https://github.com/mt-mods/homedecor_modpack
           additional_config: |
-            mtt_nodelist = mineclone2.txt
+            mtt_nodelist = voxelibre.txt
