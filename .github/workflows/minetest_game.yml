@@ -14,6 +14,7 @@ jobs:
           git_dependencies: |
             https://github.com/mt-mods/unifieddyes
             https://github.com/mt-mods/basic_materials
+            https://github.com/OgelGames/fakelib
             https://github.com/mt-mods/pipeworks
             https://github.com/mt-mods/steel
             https://github.com/mt-mods/display_modpack
