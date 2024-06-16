@@ -4,7 +4,7 @@ xcompat = {
     modpath = modpath,
 }
 
-xcompat.gameid = dofile(modpath .. "/src/gameid.lua")
+xcompat.gameid, xcompat.real_gameid = dofile(modpath .. "/src/gameid.lua")
 xcompat.utilities = dofile(modpath .. "/src/utilities.lua")
 
 xcompat.sounds = dofile(modpath .. "/src/sounds.lua")

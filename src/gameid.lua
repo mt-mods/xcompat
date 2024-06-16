@@ -1,5 +1,11 @@
-local game_alias = {
+local supported_games = {
     mineclone2 = "mineclonia",
+    mineclonia = "mineclonia",
+    farlands_reloaded = "farlands_reloaded",
+    minetest = "minetest",
+    hades_revisited = "hades",
+    Exile = "exile",
+    ksurvive2 = "ksurvive2",
 }
 
 local game_modnames = {
@@ -11,11 +17,15 @@ local game_modnames = {
     ksurvive2 = "ks_metals",
 }
 
-local gameid = "xcompat_unknown_gameid"
+local real_gameid = "xcompat_unknown_gameid"
 
 if type(minetest.get_game_info) == "function" then
-    gameid = minetest.get_game_info().id
-else
+    real_gameid = minetest.get_game_info().id
+end
+
+local gameid = supported_games[real_gameid]
+
+if not gameid then
     for game, modname in pairs(game_modnames) do
         if minetest.get_modpath(modname) then
             gameid = game
@@ -24,10 +34,4 @@ else
     end
 end
 
---for games that are similar/derviatives of other games
-if game_alias[gameid] then gameid = game_alias[gameid] end
-
---while minetest game derviates are not supported, we can still try to detect them
-if minetest.get_modpath("default") then gameid = "minetest" end
-
-return gameid
+return gameid or "xcompat_unknown_gameid", real_gameid
