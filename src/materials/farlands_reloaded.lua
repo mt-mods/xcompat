@@ -38,6 +38,7 @@ local materials = {
     dye_dark_green = "fl_dyes:dark_green_dye",
     dye_orange = "fl_dyes:orange_dye",
     dye_pink = "fl_dyes:pink_dye",
+    dye_cyan = "fl_dyes:cyan_dye",
     silver_ingot = "fl_ores:iron_ingot",
     silicon = "mesecons_materials:silicon",
     string = "fl_plantlife:oxeye_daisy",

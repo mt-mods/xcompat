@@ -38,6 +38,7 @@ local materials = {
     dye_dark_green = "dye:dark_green",
     dye_orange = "dye:orange",
     dye_pink = "dye:pink",
+    dye_cyan = "dye:cyan",
     silicon = "mesecons_materials:silicon",
     string = "farming:string",
     paper = "default:paper",
