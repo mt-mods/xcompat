@@ -4,6 +4,9 @@ globals = {
 }
 
 read_globals = {
+	string = {fields = {"split"}},
+    table = {fields = {"copy", "getn"}},
+
 	"default",
 	"mcl_sounds",
 	"ks_sounds",
