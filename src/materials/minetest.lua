@@ -25,31 +25,11 @@ local materials = {
     clay_lump = "default:clay_lump",
     water_bucket = "bucket:bucket_water",
     empty_bucket = "bucket:bucket_empty",
-    dye_dark_grey = "dye:dark_grey",
-    dye_black = "dye:black",
-    dye_white = "dye:white",
-    dye_green = "dye:green",
-    dye_red = "dye:red",
-    dye_yellow = "dye:yellow",
-    dye_brown = "dye:brown",
-    dye_blue = "dye:blue",
-    dye_violet = "dye:violet",
-    dye_grey = "dye:grey",
-    dye_dark_green = "dye:dark_green",
-    dye_orange = "dye:orange",
-    dye_pink = "dye:pink",
-    dye_cyan = "dye:cyan",
     silicon = "mesecons_materials:silicon",
     string = "farming:string",
     paper = "default:paper",
     book = "default:book",
     iron_lump = "default:iron_lump",
-    wool_grey = "wool:grey",
-    wool_green = "wool:green",
-    wool_dark_green = "wool:dark_green",
-    wool_brown = "wool:brown",
-    wool_black = "wool:black",
-    wool_white = "wool:white",
     slab_stone = "stairs:slab_stone",
     slab_wood = "stairs:slab_wood",
     glass = "default:glass",
@@ -76,6 +56,13 @@ local materials = {
     jungle_leaves = "default:jungleleaves",
     bowl = "",
 }
+
+-- All dye-related
+for _, row in ipairs(dye.dyes) do
+    local name = row[1]
+    materials["dye_" .. name] = "dye:" .. name
+    materials["wool_" .. name] = "wool:" .. name
+end
 
 if minetest.registered_items["farming:bowl"] then
     materials.bowl = "farming:bowl"
