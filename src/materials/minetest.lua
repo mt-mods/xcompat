@@ -39,6 +39,7 @@ local materials = {
     dye_orange = "dye:orange",
     dye_pink = "dye:pink",
     dye_cyan = "dye:cyan",
+    dye_magenta = "dye:magenta",
     silicon = "mesecons_materials:silicon",
     string = "farming:string",
     paper = "default:paper",
@@ -75,6 +76,7 @@ local materials = {
     birch_planks = "default:aspen_wood",
     jungle_leaves = "default:jungleleaves",
     bowl = "",
+    stick = "default:stick",
 }
 
 if minetest.registered_items["farming:bowl"] then

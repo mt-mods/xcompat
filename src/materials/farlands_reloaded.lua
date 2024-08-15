@@ -39,6 +39,7 @@ local materials = {
     dye_orange = "fl_dyes:orange_dye",
     dye_pink = "fl_dyes:pink_dye",
     dye_cyan = "fl_dyes:cyan_dye",
+    dye_magenta = "fl_dyes:magenta_dye",
     silver_ingot = "fl_ores:iron_ingot",
     silicon = "mesecons_materials:silicon",
     string = "fl_plantlife:oxeye_daisy",
@@ -76,6 +77,7 @@ local materials = {
     birch_planks = "fl_trees:aspen_plank",
     jungle_leaves = "fl_trees:jungletree_leaves",
     bowl = "",
+    stick = "fl_trees:stick",
 }
 
 if minetest.get_modpath("basic_materials") then
