@@ -44,7 +44,7 @@ end)
 
 dofile(modpath .. "/src/commands.lua")
 
-if minetest.get_modpath("mtt") then
+if minetest.get_modpath("mtt") and mtt.enabled then
     -- register tests
     dofile(modpath .. "/mtt.lua")
 end
