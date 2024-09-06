@@ -27,6 +27,13 @@ function functions.sapling_on_place(
 
 	local pos = pointed_thing.above
 	local pname = player and player:get_player_name() or ""
+	local below_node = minetest.get_node_or_nil(pointed_thing.under)
+
+	if below_node and minetest.registered_items[below_node.name] and
+		minetest.registered_items[below_node.name].buildable_to then
+
+		pos = pointed_thing.under
+	end
 
 	--check protection
 	if minetest.is_protected(pos, pname) then
