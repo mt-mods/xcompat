@@ -12,12 +12,12 @@ function papi.get_animation(player)
     return player_api.get_animation(player)
 end
 
-function papi.get_textures(player, textures)
-    return player_api.get_textures(player, textures)
+function papi.get_textures(player)
+    return player_api.get_textures(player)
 end
 
-function papi.set_textures(player, index, texture)
-    return player_api.set_textures(player, index, texture)
+function papi.set_textures(player, texture)
+    return player_api.set_textures(player, texture)
 end
 
 function papi.set_animation(player, anim_name, speed, loop)

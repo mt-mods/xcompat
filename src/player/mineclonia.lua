@@ -12,15 +12,15 @@ function papi.get_animation(player)
     return mcl_player.player_get_animation(player)
 end
 
-function papi.get_textures(player, textures)
-    --todo: handle
+function papi.get_textures(player)
+    return player:get_properties().textures
 end
 
-function papi.set_textures(player, index, texture)
-    --todo: handle
+function papi.set_textures(player, textures)
+    player:set_properties({textures = textures})
 end
 
-function papi.set_animation(player, anim_name, speed)
+function papi.set_animation(player, anim_name, speed, _)
     return mcl_player.player_set_animation(player, anim_name, speed)
 end
 
