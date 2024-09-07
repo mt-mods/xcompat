@@ -17,4 +17,5 @@ read_globals = {
 	"sounds",
 	"player_api",
 	"mcl_player",
+	"fl_player",
 }

@@ -21,7 +21,7 @@ See the respective sub apis doc file in /doc for detailed documentation.
 | MineClone2        | x         | x         |           | x      |
 | Mineclonia        | x         | x         |           | x      |
 | Hades Revisited   | x         | x         |           |        |
-| Farlands Reloaded | x         | x         | x         |        |
+| Farlands Reloaded | x         | x         | x         | x      |
 | Exile             | x         |           |           |        |
 | KSurvive 2        | x         |           |           |        |
 | Forgotten Lands   | x         |           |           |        |
