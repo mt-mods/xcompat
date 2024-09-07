@@ -25,27 +25,17 @@ function papi.set_animation(player, anim_name, speed, loop)
 end
 
 
-local papi_metatable = {
-    __newindex = function (table, key, value)
-        player_api.player_attached[key] = value
-
-        rawset(table, key, value)
-    end
-}
-
-local player_api_metatable = {
-    __newindex = function (table, key, value)
-        rawset(papi.player_attached, key, value)
-        rawset(table, key, value)
+local metatable = {
+    __index = function (_, key)
+        return player_api.player_attached[key]
+    end,
+    __newindex = function (_, key, value)
+        rawset(player_api.player_attached, key, value)
     end
 }
 
 papi.player_attached = {}
 
---when a value is set in xcompat api, this will also set it in the player api
-setmetatable(papi.player_attached, papi_metatable)
-
---when a value is set in player api, this will also set it in the xcompat api
-setmetatable(player_api.player_attached, player_api_metatable)
+setmetatable(papi.player_attached, metatable)
 
 return papi

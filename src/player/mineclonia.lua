@@ -24,6 +24,17 @@ function papi.set_animation(player, anim_name, speed)
     return mcl_player.player_set_animation(player, anim_name, speed)
 end
 
---todo: handle ignoring animations (maybe metatables?)
+local metatable = {
+    __index = function (_, key)
+        return mcl_player.player_attached[key]
+    end,
+    __newindex = function (_, key, value)
+        rawset(mcl_player.player_attached, key, value)
+    end
+}
+
+papi.player_attached = {}
+
+setmetatable(papi.player_attached, metatable)
 
 return papi
