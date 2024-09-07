@@ -24,6 +24,28 @@ function papi.set_animation(player, anim_name, speed, loop)
     return player_api.set_animation(player, anim_name, speed, loop)
 end
 
---todo: handle ignoring animations (maybe metatables?)
+
+local papi_metatable = {
+    __newindex = function (table, key, value)
+        player_api.player_attached[key] = value
+
+        rawset(table, key, value)
+    end
+}
+
+local player_api_metatable = {
+    __newindex = function (table, key, value)
+        rawset(papi.player_attached, key, value)
+        rawset(table, key, value)
+    end
+}
+
+papi.player_attached = {}
+
+--when a value is set in xcompat api, this will also set it in the player api
+setmetatable(papi.player_attached, papi_metatable)
+
+--when a value is set in player api, this will also set it in the xcompat api
+setmetatable(player_api.player_attached, player_api_metatable)
 
 return papi
