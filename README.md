@@ -1,6 +1,6 @@
 # XCompat
 
-[![luacheck](https://github.com/mt-mods/xcompat/workflows/luacheck/badge.svg)](https://github.com/mt-mods/xcompat/actions)
+[![luacheck](https://github.com/mt-mods/xcompat/actions/workflows/luacheck.yml/badge.svg?branch=master)](https://github.com/mt-mods/xcompat/actions/workflows/luacheck.yml)
 [![ContentDB](https://content.minetest.net/packages/mt-mods/xcompat/shields/downloads/)](https://content.minetest.net/packages/mt-mods/xcompat/)
 
 Provides cross compatibility between games and mods for sounds and crafting materials.
