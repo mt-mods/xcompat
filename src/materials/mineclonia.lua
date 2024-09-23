@@ -81,4 +81,16 @@ local materials = {
     stick = "mcl_core:stick",
 }
 
+if minetest.get_modpath("moreores") then
+    materials.tin_ingot = "moreores:tin_ingot"
+    materials.tin_block = "moreores:tin_block"
+    materials.silver_ingot = "moreores:silver_ingot"
+end
+
+if minetest.get_modpath("technic") then
+    materials.lead_ingot = "technic:lead_ingot"
+    materials.carbon_steel_ingot = "technic:carbon_steel_ingot"
+    materials.stainless_steel_ingot = "technic:stainless_steel_ingot"
+end
+
 return materials
