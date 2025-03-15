@@ -2813,12 +2813,10 @@ mcl_walls:mudbrick_6
 mcl_observers:observer_off
 signs_road:red_left_sign
 mcl_lush_caves:azalea_leaves
-mcl_lush_caves:azalea_leaves_orphan
 mesecons_button:button_oak_on
 mcl_signs:wall_sign_warped
 mcl_walls:endbricks_8
 mcl_lush_caves:azalea_leaves_flowering
-mcl_lush_caves:azalea_leaves_flowering_orphan
 mcl_stairs:slab_redsandstone_double
 mcl_stairs:slab_redsandstone
 mcl_trees:tree_oak
