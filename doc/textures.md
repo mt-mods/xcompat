@@ -2,7 +2,8 @@
 
 ## Usage
 
-To use a texture in your mod, find the texture you want by looking at one of the files in `/src/texture`, and append its path to `xcompat.textures`.
+To use a texture in your mod, find the texture you want by looking at one of
+the files in `/src/texture`, and append its path to `xcompat.textures`.
 
 ## Example
 
