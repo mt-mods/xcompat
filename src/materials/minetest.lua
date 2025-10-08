@@ -7,6 +7,7 @@ local materials = {
     steel_ingot = "default:steel_ingot",
     gold_ingot = "default:gold_ingot",
     tin_ingot = "default:tin_ingot",
+    bronze_ingot = "default:bronze_ingot",
     copper_block = "default:copperblock",
     steel_block = "default:steelblock",
     gold_block = "default:goldblock",
@@ -17,13 +18,17 @@ local materials = {
     axe_stone = "default:axe_stone",
     axe_wood = "default:axe_wood",
     pick_steel = "default:pick_steel",
+    pick_silver = "default:pick_silver",
     mese = "default:mese",
     mese_crystal = "default:mese_crystal",
     mese_crystal_fragment = "default:mese_crystal_fragment",
     torch = "default:torch",
     diamond = "default:diamond",
+    clay = "default:clay",
     clay_lump = "default:clay_lump",
     water_bucket = "bucket:bucket_water",
+    lava_bucket = "bucket:bucket_lava",
+    river_water_bucket = "bucket:bucket_river_water",
     empty_bucket = "bucket:bucket_empty",
     dye_dark_grey = "dye:dark_grey",
     dye_black = "dye:black",
@@ -45,6 +50,9 @@ local materials = {
     paper = "default:paper",
     book = "default:book",
     iron_lump = "default:iron_lump",
+    gold_lump = "default:gold_lump",
+    copper_lump = "default:copper_lump",
+    tin_lump = "default:tin_lump",
     wool_grey = "wool:grey",
     wool_green = "wool:green",
     wool_dark_green = "wool:dark_green",
@@ -60,23 +68,41 @@ local materials = {
     stone = "default:stone",
     desert_stone = "default:desert_stone",
     desert_sand = "default:desert_sand",
+    desert_sandstone = "default:desert_sandstone",
+    silver_sand = "default:silver_sand",
+    silver_sandstone = "default:silver_sandstone",
     chest = "default:chest",
     cobble = "default:cobble",
+    mossycobble = "default:mossycobble",
     brick = "default:brick",
+    obsidian = "default:obsidian",
     obsidian_glass = "default:obsidian_glass",
     water_source = "default:water_source",
     water_flowing = "default:water_flowing",
+    river_water_source = "default:river_water_source",
+    river_water_flowing = "default:river_water_flowing",
+    lava_source = "default:lava_source",
+    lava_flowing = "default:lava_flowing",
     dirt = "default:dirt",
     dirt_with_grass = "default:dirt_with_grass",
+    dirt_with_snow = "default:dirt_with_snow",
+    snowblock = "default:snowblock",
+    ice = "default:ice",
     apple_leaves = "default:leaves",
     apple_log = "default:tree",
     apple_planks = "default:wood",
+    acacia_planks = "default:acacia_wood",
     birch_leaves = "default:aspen_leaves",
     birch_log = "default:aspen_tree",
     birch_planks = "default:aspen_wood",
     jungle_leaves = "default:jungleleaves",
     bowl = "",
     stick = "default:stick",
+    wheat = "farming:wheat",
+    wheat_seed = "farming:seed_wheat",
+    dry_shrub = "default:dry_shrub",
+    insulation = "mesecons_materials:fiber",
+    furnace = "default:furnace",
 }
 
 if minetest.registered_items["farming:bowl"] then
@@ -87,12 +113,15 @@ end
 
 if minetest.get_modpath("moreores") then
     materials.silver_ingot = "moreores:silver_ingot"
+    materials.mithril_block = "moreores:mithril_block"
+    materials.mithril_ingot = "moreores:mithril_ingot"
 end
 
 if minetest.get_modpath("technic") then
 	materials.lead_ingot = "technic:lead_ingot"
 	materials.carbon_steel_ingot = "technic:carbon_steel_ingot"
 	materials.stainless_steel_ingot = "technic:stainless_steel_ingot"
+    materials.insulation = "technic:rubber"
 end
 
 if minetest.get_modpath("aloz") then
