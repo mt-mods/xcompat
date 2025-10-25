@@ -15,16 +15,16 @@ See the respective sub apis doc file in /doc for detailed documentation.
 
 ## Directly supported games and mods
 
-| Games             | Sounds    | Materials | Textures  | Player |
-| ----------------- | --------- | --------- | --------- | ------ |
-| Minetest Game     | x         | x         | x         | x      |
-| MineClone2        | x         | x         |           | x      |
-| Mineclonia        | x         | x         |           | x      |
-| Hades Revisited   | x         | x         |           |        |
-| Farlands Reloaded | x         | x         | x         | x      |
-| Exile             | x         |           |           |        |
-| KSurvive 2        | x         |           |           |        |
-| Forgotten Lands   | x         |           |           |        |
+| Games             | Sounds    | Materials | Textures  | Player | Stairs |
+| ----------------- | --------- | --------- | --------- | ------ | ------ |
+| Minetest Game     | x         | x         | x         | x      | x      |
+| MineClone2        | x         | x         |           | x      |        |
+| Mineclonia        | x         | x         |           | x      |        |
+| Hades Revisited   | x         | x         |           |        |        |
+| Farlands Reloaded | x         | x         | x         | x      | x      |
+| Exile             | x         |           |           |        |        |
+| KSurvive 2        | x         |           |           |        |        |
+| Forgotten Lands   | x         |           |           |        |        |
 
 For functions see /doc/functions.md for the specifics relating to the function
 

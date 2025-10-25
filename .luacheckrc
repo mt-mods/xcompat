@@ -1,9 +1,13 @@
 globals = {
 	"minetest",
+	"core",
 	"xcompat",
 }
 
 read_globals = {
+	string = {fields = {"split"}},
+    table = {fields = {"copy", "getn"}},
+
 	"default",
 	"mcl_sounds",
 	"ks_sounds",
@@ -18,4 +22,5 @@ read_globals = {
 	"player_api",
 	"mcl_player",
 	"fl_player",
+	"stairs",
 }
