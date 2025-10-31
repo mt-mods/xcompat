@@ -78,6 +78,7 @@ local materials = {
     jungle_leaves = "fl_trees:jungletree_leaves",
     bowl = "",
     stick = "fl_trees:stick",
+    obsidian = "",
 }
 
 if minetest.get_modpath("basic_materials") then
