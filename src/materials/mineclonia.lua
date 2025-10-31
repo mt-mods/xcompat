@@ -72,6 +72,7 @@ local materials = {
     dirt_with_grass = "mcl_core:dirt_with_grass",
     bowl = "mcl_core:bowl",
     stick = "mcl_core:stick",
+    obsidian = "mcl_core:obsidian",
 }
 
 if minetest.get_modpath("mcl_redstone") then

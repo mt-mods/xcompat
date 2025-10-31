@@ -85,6 +85,7 @@ local materials = {
 --hades has no bowl but you get plate on eat so makes most sense?
     bowl = "hades_food:plate",
     stick = "hades_core:stick",
+    obsidian = "hades_core:obsidian",
 }
 
 if minetest.get_modpath("hades_bucket") then

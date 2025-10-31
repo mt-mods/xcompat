@@ -77,6 +77,7 @@ local materials = {
     jungle_leaves = "default:jungleleaves",
     bowl = "",
     stick = "default:stick",
+    obsidian = "default:obsidian",
 }
 
 if minetest.registered_items["farming:bowl"] then
