@@ -101,7 +101,7 @@ local materials = {
     wheat = "farming:wheat",
     wheat_seed = "farming:seed_wheat",
     dry_shrub = "default:dry_shrub",
-    insulation = "mesecons_materials:fiber",
+	insulation = "default:paper",
     furnace = "default:furnace",
 }
 
@@ -115,6 +115,10 @@ if minetest.get_modpath("moreores") then
     materials.silver_ingot = "moreores:silver_ingot"
     materials.mithril_block = "moreores:mithril_block"
     materials.mithril_ingot = "moreores:mithril_ingot"
+end
+
+if core.get_modpath("mesecons_materials") then
+    materials.insulation = "mesecons_materials:fiber"
 end
 
 if minetest.get_modpath("technic") then
