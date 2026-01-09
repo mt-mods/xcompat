@@ -85,6 +85,7 @@ local materials = {
 --hades has no bowl but you get plate on eat so makes most sense?
     bowl = "hades_food:plate",
     stick = "hades_core:stick",
+    insulation = "hades_core:paper",
 }
 
 if minetest.get_modpath("hades_bucket") then
@@ -98,10 +99,14 @@ end
 if minetest.get_modpath("hades_default") then
     materials.desert_sand = "hades_default:desert_sand"
 end
+if core.get_modpath("mesecons_materials") then
+    materials.insulation = "mesecons_materials:fiber"
+end
 if minetest.get_modpath("hades_technic") then
     materials.lead_ingot = "hades_technic:lead_ingot"
     materials.carbon_steel_ingot = "hades_technic:carbon_steel_ingot"
     materials.stainless_steel_ingot = "hades_technic:stainless_steel_ingot"
+    materials.insulation = "technic:rubber"
 end
 
 return materials
