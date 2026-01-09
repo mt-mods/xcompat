@@ -1,3 +1,7 @@
+if not core.global_exists("default") then
+    return {}
+end
+
 local sound_api = {
     node_sound_default         = default.node_sound_defaults,
     node_sound_stone_defaults  = default.node_sound_stone_defaults,
