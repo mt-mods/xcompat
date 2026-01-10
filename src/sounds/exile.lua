@@ -1,7 +1,3 @@
-if not core.global_exists("nodes_nature") then
-    return {}
-end
-
 local pass = function(soundtable)
     return soundtable
 end

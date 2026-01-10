@@ -1,7 +1,3 @@
-if not core.global_exists("sounds") then
-    return {}
-end
-
 local pass = function(soundtable)
     return soundtable
 end

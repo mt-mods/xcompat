@@ -1,7 +1,3 @@
-if not (core.global_exists("fl_stone") and core.global_exists("fl_topsoil") and core.global_exists("fl_trees")) then
-    return {}
-end
-
 local pass = function(soundtable)
     return soundtable
 end

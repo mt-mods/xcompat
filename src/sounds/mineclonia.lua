@@ -1,8 +1,4 @@
---note this file handles mineclonia, mineclone2, and its rename voxelibre
-
-if not core.global_exists("mcl_sounds") then
-    return {}
-end
+-- note this file handles mineclonia, mineclone2, and its rename voxelibre
 
 local sound_api = {
     node_sound_default         = mcl_sounds.node_sound_defaults,
