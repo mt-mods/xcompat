@@ -79,6 +79,7 @@ local materials = {
     jungle_leaves = "mcl_trees:leaves_jungle",
     bowl = "mcl_core:bowl",
     stick = "mcl_core:stick",
+    insulation = "mcl_core:paper",
 }
 
 if minetest.get_modpath("moreores") then
@@ -87,10 +88,15 @@ if minetest.get_modpath("moreores") then
     materials.silver_ingot = "moreores:silver_ingot"
 end
 
+if core.get_modpath("mesecons_materials") then
+    materials.insulation = "mesecons_materials:fiber"
+end
+
 if minetest.get_modpath("technic") then
     materials.lead_ingot = "technic:lead_ingot"
     materials.carbon_steel_ingot = "technic:carbon_steel_ingot"
     materials.stainless_steel_ingot = "technic:stainless_steel_ingot"
+    materials.insulation = "technic:rubber"
 end
 
 return materials

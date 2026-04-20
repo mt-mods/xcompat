@@ -78,6 +78,7 @@ local materials = {
     jungle_leaves = "fl_trees:jungletree_leaves",
     bowl = "",
     stick = "fl_trees:stick",
+    insulation = "fl_bricks:clay_lump",
 }
 
 if minetest.get_modpath("basic_materials") then
@@ -88,6 +89,17 @@ if minetest.registered_items["farming:bowl"] then
     materials.bowl = "farming:bowl"
 elseif minetest.get_modpath("x_farming") then
     materials.bowl = "x_farming:bowl"
+end
+
+if core.get_modpath("mesecons_materials") then
+    materials.insulation = "mesecons_materials:fiber"
+end
+
+if core.get_modpath("technic") then
+    materials.lead_ingot = "technic:lead_ingot"
+    materials.carbon_steel_ingot = "technic:carbon_steel_ingot"
+    materials.stainless_steel_ingot = "technic:stainless_steel_ingot"
+    materials.insulation = "technic:rubber"
 end
 
 return materials

@@ -18,7 +18,6 @@ local materials = {
     axe_stone = "default:axe_stone",
     axe_wood = "default:axe_wood",
     pick_steel = "default:pick_steel",
-    pick_silver = "default:pick_silver",
     mese = "default:mese",
     mese_crystal = "default:mese_crystal",
     mese_crystal_fragment = "default:mese_crystal_fragment",
@@ -45,7 +44,6 @@ local materials = {
     dye_pink = "dye:pink",
     dye_cyan = "dye:cyan",
     dye_magenta = "dye:magenta",
-    silicon = "mesecons_materials:silicon",
     string = "farming:string",
     paper = "default:paper",
     book = "default:book",
@@ -101,7 +99,7 @@ local materials = {
     wheat = "farming:wheat",
     wheat_seed = "farming:seed_wheat",
     dry_shrub = "default:dry_shrub",
-    insulation = "mesecons_materials:fiber",
+	insulation = "default:paper",
     furnace = "default:furnace",
 }
 
@@ -112,9 +110,15 @@ elseif minetest.get_modpath("x_farming") then
 end
 
 if minetest.get_modpath("moreores") then
+    materials.pick_silver = "moreores:pick_silver",
     materials.silver_ingot = "moreores:silver_ingot"
     materials.mithril_block = "moreores:mithril_block"
     materials.mithril_ingot = "moreores:mithril_ingot"
+end
+
+if core.get_modpath("mesecons_materials") then
+    materials.silicon = "mesecons_materials:silicon"
+    materials.insulation = "mesecons_materials:fiber"
 end
 
 if minetest.get_modpath("technic") then
