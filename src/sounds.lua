@@ -1,6 +1,6 @@
 local filename = xcompat.gameid
 
---if we dont have a materials file for the game, use minetest
+--if we dont have a sounds file for the game, use xcompat_agnostic
 if not xcompat.utilities.file_exists(xcompat.modpath .. "/src/sounds/" .. filename .. ".lua") then
     filename = "xcompat_agnostic"
 end
