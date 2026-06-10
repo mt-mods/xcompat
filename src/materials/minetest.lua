@@ -23,6 +23,7 @@ local materials = {
     torch = "default:torch",
     diamond = "default:diamond",
     clay_lump = "default:clay_lump",
+    clay_brick = "default:clay_brick",
     water_bucket = "bucket:bucket_water",
     empty_bucket = "bucket:bucket_empty",
     dye_dark_grey = "dye:dark_grey",
