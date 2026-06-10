@@ -23,4 +23,5 @@ read_globals = {
 	"mcl_player",
 	"fl_player",
 	"stairs",
+	"aom_cooking",
 }

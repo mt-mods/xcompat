@@ -13,6 +13,7 @@ xcompat.textures = dofile(modpath .. "/src/textures.lua")
 xcompat.functions = dofile(modpath .. "/src/functions.lua")
 xcompat.player = dofile(modpath .. "/src/player.lua")
 xcompat.stairs = dofile(modpath .. "/src/stairs.lua")
+xcompat.register_craft = dofile(modpath .. "/src/crafting.lua")
 
 local function validate_sound(key)
     if key and xcompat.sounds[key] then

@@ -1,5 +1,6 @@
 local game_alias = {
     mineclone2 = "mineclonia",
+    pmb_core = "age_of_mending",
 }
 
 local game_modnames = {
@@ -10,6 +11,7 @@ local game_modnames = {
     exile = "exile_env_sounds",
     ksurvive2 = "ks_metals",
     devtest = "basenodes",
+    age_of_mending = "age_of_mending",
 }
 
 local gameid = "xcompat_unknown_gameid"
